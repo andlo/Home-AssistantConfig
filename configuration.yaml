@@ -1,0 +1,365 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: 55.986105
+  longitude: 12.496975
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 21
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/Copenhagen
+  # Customization file
+  customize: !include customize.yaml
+
+#notify:
+#  - name: html5_notify
+#    platform: html5
+
+#conversation:
+#  intents:
+#    WatherFlower:
+#     - Do I need to whater the plant#
+
+#intent_script:
+#  WatherFlower:
+#    speech: 
+#      text: Yes, you need to whater the plant
+
+zone:
+  - name: School
+    latitude: 55.988263
+    longitude: 12.526343 
+    radius: 150
+    icon: mdi:school
+
+  - name: Work
+    latitude: 55.706999
+    longitude: 12.563371 
+    radius: 150
+    icon: mdi:worker
+
+  # This will override the default home zone
+  - name: Home
+    latitude: 55.986105
+    longitude: 12.496975
+    radius: 35
+    icon: mdi:home
+
+# Show links to resources in log and frontend
+# introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+mycroft:
+  host: mark_1
+
+http:
+  # Secrets are defined in the file secrets.yaml
+  api_password: !secret http_password
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  base_url: https://andlo.duckdns.org:443
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+#conversation:
+
+history:
+
+# View all events in a logbook
+logbook:
+
+
+# Track the sun
+sun:
+
+map:
+
+sensor:
+  - platform: yr
+    name: Weather
+    monitored_conditions:
+      - temperature
+      - symbol
+      - windSpeed
+      - windDirection
+      - humidity
+      - cloudiness
+  - platform: google_travel_time
+    name: Car to Home
+    api_key: AIzaSyD4WuBsynfqhdklhY6CZ-56D01-Nz2yVT8 
+    origin: device_tracker.wvwzzzaazed902044
+    destination: zone.home
+  - platform: google_travel_time
+    name: Car to Work
+    api_key: AIzaSyD4WuBsynfqhdklhY6CZ-56D01-Nz2yVT8 
+    origin: device_tracker.wvwzzzaazed902044
+    destination: zone.work
+  - platform: miflora
+    mac: 'c4:7c:8d:66:14:84'
+    name: Kitchen flower
+    force_update: true
+    timeout: 30
+    retries: 5
+  - platform: miflora
+    mac: 'c4:7c:8d:66:18:73'
+    name: plant_2
+    force_update: true
+    timeout: 30
+    retries: 5
+  - platform: miflora
+    mac: 'c4:7c:8d:66:1e:e9'
+    name: plant_3
+    force_update: true
+    timeout: 30
+    retries: 5
+  - platform: miflora
+    mac: 'c4:7c:8d:66:1b:bf'
+    name: plant_4
+    force_update: true
+    timeout: 30
+    retries: 5
+  - platform: miflora
+    mac: 'c4:7c:8d:66:19:be'
+    name: plant_5
+    force_update: true
+    timeout: 30
+    retries: 5
+  - platform: miflora
+    mac: 'c4:7c:8d:66:9e:b9'
+    name: plant_6
+    force_update: true
+    timeout: 30
+    retries: 5
+  - platform: miflora
+    mac: 'c4:7c:8d:66:0a:69'
+    name: plant_7
+    force_update: true
+    timeout: 30
+    retries: 5
+  - platform: miflora
+    mac: 'c4:7c:8d:66:12:b9'
+    name: plant_8
+    force_update: true
+    timeout: 30
+    retries: 5
+  - platform: miflora
+    mac: 'c4:7c:8d:66:1d:62'
+    name: plant_9
+    force_update: true
+    timeout: 30
+    retries: 5
+  - platform: miflora
+    mac: 'c4:7c:8d:66:19:c6'
+    name: plant_10
+    force_update: true
+    timeout: 30
+    retries: 5
+  - platform: speedtest
+    minute: 30
+    hour:
+      - 4
+      - 14
+    monitored_conditions:
+      - ping
+      - download
+      - upload  
+
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+
+zwave:
+  usb_path: /dev/ttyACM0
+  config_path: /config/OZWconfig/config
+
+hassio:
+
+device_tracker:
+  - platform: owntracks_http
+  - platform: bluetooth_tracker
+    new_device_defaults:
+      track_new_devices: true
+      hide_if_away: true
+
+media_player:
+  - platform: kodi
+    host: osmc.lan
+  - platform: snapcast
+    host: 192.168.1.185
+  - platform: spotify
+    client_id: 370e2761edc24e10bc0e8ad1e8dee73a 
+    client_secret: ae0353d3d6f84b6b97092e7ae412a6a4 
+
+climate:
+  - platform: zwave
+
+volkswagen_carnet:
+    username: andlo@outlook.dk
+    password: Sesam123
+    update_interval: 
+        minutes: 10
+
+
+panel_iframe:
+  configurator:
+    title: Configurator
+    icon: mdi:wrench
+    url: http://192.168.1.10:3218
+
+plant:
+  plant_1:
+    sensors:
+      moisture: sensor.kitchen_flower_moisture
+      battery: sensor.kitchen_flower_battery
+      temperature: sensor.kitchen_flower_temperature
+      conductivity: sensor.kitchen_flower_conductivity
+      brightness: sensor.kitchen_flower_light_intensity
+    min_moisture: 20
+    max_moisture: 60
+    min_battery: 17
+    min_conductivity: 500
+    min_temperature: 15
+  plant_2:
+    sensors:
+      moisture: sensor.plant_2_moisture
+      battery: sensor.plant_2_battery
+      temperature: sensor.plant_2_temperature
+      conductivity: sensor.plant_2_conductivity
+      brightness: sensor.plant_2_light_intensity
+    min_moisture: 20
+    max_moisture: 60
+    min_battery: 17
+    min_conductivity: 500
+  plant_3:
+    sensors:
+      moisture: sensor.plant_3_moisture
+      battery: sensor.plant_3_battery
+      temperature: sensor.plant_3_ttemperature
+      conductivity: sensor.plant_3_conductivity
+      brightness: sensor.plant_3_light_intensity
+    min_moisture: 20
+    max_moisture: 60
+    min_battery: 17
+    min_conductivity: 500
+  plant_4:
+    sensors:
+      moisture: sensor.plant_4_moisture
+      battery: sensor.plant_4_battery
+      temperature: sensor.plant_4_temperature
+      conductivity: sensor.plant_4_conductivity
+      brightness: sensor.plant_4_light_intensity
+    min_moisture: 20
+    max_moisture: 60
+    min_battery: 17
+    min_conductivity: 500
+  plant_5:
+    sensors:
+      moisture: sensor.plant_5_moisture
+      battery: sensor.plant_5_battery
+      temperature: sensor.plant_5_temperature
+      conductivity: sensor.plant_5_conductivity
+      brightness: sensor.plant_5_light_intensity
+    min_moisture: 20
+    max_moisture: 60
+    min_battery: 17
+    min_conductivity: 500
+  plant_6:
+    sensors:
+      moisture: sensor.plant_6_moisture
+      battery: sensor.plant_6_battery
+      temperature: sensor.plant_6_temperature
+      conductivity: sensor.plant_6_conductivity
+      brightness: sensor.plant_6_light_intensity
+    min_moisture: 20
+    max_moisture: 60
+    min_battery: 17
+    min_conductivity: 500
+  plant_7:
+    sensors:
+      moisture: sensor.plant_7_moisture
+      battery: sensor.plant_7_battery
+      temperature: sensor.plant_7_temperature
+      conductivity: sensor.plant_7_conductivity
+      brightness: sensor.plant_7_light_intensity
+    min_moisture: 20
+    max_moisture: 60
+    min_battery: 17
+    min_conductivity: 500
+  plant_8:
+    sensors:
+      moisture: sensor.plant_8_moisture
+      battery: sensor.plant_8_battery
+      temperature: sensor.plant_8_temperature
+      conductivity: sensor.plant_8_conductivity
+      brightness: sensor.plant_8_light_intensity
+    min_moisture: 20
+    max_moisture: 60
+    min_battery: 17
+    min_conductivity: 500
+  plant_9:
+    sensors:
+      moisture: sensor.plant_9_moisture
+      battery: sensor.plant_9_battery
+      temperature: sensor.plant_9_temperature
+      conductivity: sensor.plant_9_conductivity
+      brightness: sensor.plant_9_light_intensity
+    min_moisture: 20
+    max_moisture: 60
+    min_battery: 17
+    min_conductivity: 500
+  plant_10:
+    sensors:
+      moisture: sensor.plant_10_moisture
+      battery: sensor.plant_10_battery
+      temperature: sensor.plant_10_temperature
+      conductivity: sensor.plant_10_conductivity
+      brightness: sensor.plant_10_light_intensity
+    min_moisture: 20
+    max_moisture: 60
+    min_battery: 17
+    min_conductivity: 500
+
+joaoapps_join:
+  - name: android
+    device_id: group.android
+    api_key: b4a0c32b3b9e46f7a02edca07383dd40
+
+history_graph:
+  gr1:
+    name: Car battery level 
+    entities:
+      - sensor.wvwzzzaazed902044_battery_level
+      - sensor.wvwzzzaazed902044_electric_range
+    hours_to_show: 480
+    refresh: 10
+
+
+ecovacs:
+  username: andlo@outlook.dk
+  password: Sesam123
+
+#vacuum:
+#  - platform: ecovacs
+#    username: andlo@outlook.dk
+#    password: Sesam123
+#    name: Deebot

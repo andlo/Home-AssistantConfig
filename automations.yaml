@@ -1,0 +1,88 @@
+- action:
+  - data:
+      brightness_pct: '10'
+      entity_id: group.bedroom
+    service: light.turn_on
+  - delay: '900'
+  - data:
+      brightness_pct: '20'
+      entity_id: group.bedroom
+    service: light.turn_on
+  - delay: '900'
+  - data:
+      brightness_pct: '40'
+      entity_id: group.bedroom
+    service: light.turn_on
+  - delay: '900'
+  - data:
+      brightness_pct: '60'
+      entity_id: group.bedroom
+    service: light.turn_on
+  - delay: '900'
+  - data:
+      brightness_pct: '75'
+      entity_id: group.bedroom
+    service: light.turn_on
+  - delay: '3600'
+  - data:
+      entity_id: group.bedroom
+    service: light.turn_off
+  alias: Slowly turn on bedroom light at morning
+  condition:
+  - condition: time
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+  id: '1508703763361'
+  trigger:
+  - at: 06:00
+    platform: time
+- action:
+  - data:
+      entity_id: switch.switch_outside_switch
+    service: turn.on
+  alias: 'Udelys '
+  condition:
+  - condition: time
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+  id: '1508760470707'
+  trigger:
+  - event: sunset
+    platform: sun
+- action:
+  - data:
+      entity_id: switch.wvwzzzaazed902044_climatisation
+    service: switch.turn_on
+  - delay: '1800'
+  - data:
+      entity_id: switch.wvwzzzaazed902044_climatisation
+    service: switch.turn_on
+  - delay: '1800'
+  - data:
+      entity_id: switch.wvwzzzaazed902044_climatisation
+    service: switch.turn_on
+  - delay: '1800'
+  - data:
+      entity_id: switch.wvwzzzaazed902044_climatisation
+    service: switch.turn_on
+  alias: Turn on Car Climate every morning
+  condition: 
+  - condition: time
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+  id: '1519663236780'
+  trigger:
+  - at: '6:00'
+    platform: time

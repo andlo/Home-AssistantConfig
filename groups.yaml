@@ -1,0 +1,132 @@
+default_test:
+    view: yes
+    icon: mdi:home
+    entities:
+      - group.downstairs
+      - group.upstairs
+      - group.bedroom
+      - group.kidsroom
+      - group.outside
+      - sensor.weather_symbol
+      - sensor.weather_temperature
+      - sensor.kitchen_thermostat_temperature
+      - sensor.living_room_thermostat_temperature
+      - sensor.bedroom_thermostat_temperature
+
+
+MusicDownstairs:
+    name: Downstairs music
+    entities:     
+      - media_player.livingroom
+      - media_player.kitchen
+
+Downstairs:
+    name: Downstairs
+    entities:
+      - light.living_room
+      - light.sofa
+      - light.bathroom
+      - switch.outside_light
+      - vacuum.none
+      - climate.kitchen_thermostat
+      - climate.living_room_thermostat
+      - climate.living_room_thermostat_2
+
+
+
+Upstairs:
+    name: Upstairs
+    entities:
+      - group.bedroom
+      - group.kidsroom
+      - switch.office_lamp
+      - climate.upstairs_thermostat
+      - climate.upstairs_thermostat_2
+
+
+Bedroom:
+    name: Bedroom
+    entities:
+      - light.bedroom_cieling
+      - light.bed_left
+      - light.bed_right
+      - climate.bedroom_thermostat
+
+KidsRoom:
+    name: Kidsroom
+    entities:
+      - switch.kids_room_lamp
+      - climate.kids_room_thermostat
+
+Outside:
+    name: Outside
+    icon: mdi:tree
+    entities:
+
+volkswagendashboard:
+    name: Volkswagen
+    view: yes
+    icon: mdi:car
+    entities:
+        - group.volkswagenswitches
+        - group.volkswagensensors
+        - group.volkswagenlocation
+
+volkswagenswitches:
+    name: Volkswagen Switches
+    control: hidden
+    entities:
+        - switch.wvwzzzaazed902044_charging
+        - switch.wvwzzzaazed902044_climatisation
+        - switch.wvwzzzaazed902044_window_heater
+        - lock.wvwzzzaazed902044_doors_locked
+        - lock.wvwzzzaazed902044_trunk_locked
+  
+volkswagensensors:
+    name: Volkswagen Information
+    control: hidden
+    entities:
+        - sensor.wvwzzzaazed902044_battery_level
+        - sensor.wvwzzzaazed902044_fuel_level
+        - sensor.wvwzzzaazed902044_charging_time_left
+        - sensor.wvwzzzaazed902044_odometer
+        - sensor.wvwzzzaazed902044_electric_range
+        - sensor.wvwzzzaazed902044_combustion_range
+        - sensor.wvwzzzaazed902044_combined_range
+        - sensor.wvwzzzaazed902044_last_connected
+        - sensor.wvwzzzaazed902044_service_inspection
+        - sensor.wvwzzzaazed902044_climatisation_target_temperature
+        - binary_sensor.wvwzzzaazed902044_parking_light
+        - binary_sensor.wvwzzzaazed902044_external_power
+        - binary_sensor.wvwzzzaazed902044_climatisation_without_external_power
+        
+volkswagenlocation:
+    name: Volkswagen Location
+    control: hidden
+
+    entities:
+        - device_tracker.wvwzzzaazed902044
+        - sensor.car_to_home
+        - sensor.car_to_work
+
+flowerdashboard:
+    name: Flowers
+    view: yes
+    icon: mdi:flower
+    entities:
+        - group.kitchen_flower
+
+kitchen_flower:
+    entities:
+        - plant.plant_1
+        - plant.plant_2
+        - plant.plant_3
+        - plant.plant_4
+        - plant.plant_5
+        - plant.plant_6
+        - plant.plant_7
+        - plant.plant_8
+        - plant.plant_9
+        - plant.plant_10
+
+    

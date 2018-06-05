@@ -1,0 +1,89 @@
+
+wvwzzzaazed902044:
+  hide_if_away: false
+  icon: mdi:car
+  mac:
+  name: WVWZZZAAZED902044
+  picture:
+  track: true
+
+nokia_3310:
+  hide_if_away: false
+  icon:
+  mac: BT_04:F1:28:BD:CE:4E
+  name: Nokia 3310
+  picture:
+  track: true
+
+hk_onyx_studio:
+  hide_if_away: false
+  icon:
+  mac: BT_0C:A6:94:06:34:79
+  name: HK Onyx Studio
+  picture:
+  track: true
+
+650jihp:
+  hide_if_away: false
+  icon:
+  mac: BT_5C:93:A2:C4:54:6D
+  name: 650JI-HP
+  picture:
+  track: true
+
+jbl_everest_elite_750nc:
+  hide_if_away: false
+  icon:
+  mac: BT_34:15:13:6C:FB:91
+  name: JBL Everest Elite 750NC
+  picture:
+  track: true
+
+sarah_s_iphone:
+  hide_if_away: false
+  icon:
+  mac: BT_DC:41:5F:1B:01:43
+  name: Sarah s iPhone
+  picture:
+  track: true
+
+farmand_mobil:
+  hide_if_away: false
+  icon:
+  mac:
+  name: farmand
+  picture:
+  track: true
+  vendor:
+
+iselins_macbook_air:
+  hide_if_away: false
+  icon:
+  mac: BT_C4:B3:01:9C:4E:C3
+  name: Iselins MacBook Air
+  picture:
+  track: true
+
+jespers_ipad:
+  hide_if_away: false
+  icon:
+  mac: BT_D0:E1:40:A6:AB:CC
+  name: Jesper’s iPad
+  picture:
+  track: true
+
+nokia_c201:
+  hide_if_away: false
+  icon:
+  mac: BT_C8:D1:0B:61:3D:25
+  name: Nokia C2-01
+  picture:
+  track: true
+
+sejereje_com:
+  hide_if_away: false
+  icon:
+  mac: BT_78:62:56:20:11:E6
+  name: sejereje. com
+  picture:
+  track: true

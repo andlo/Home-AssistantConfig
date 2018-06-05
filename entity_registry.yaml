@@ -1,0 +1,520 @@
+switch.outside_light:
+  name: Outside light
+  platform: zwave
+  unique_id: 2-72057594076282880
+switch.fibaro_system_fgs213_switch_switch_2:
+  name:
+  platform: zwave
+  unique_id: 2-144115188114210816
+sensor.fibaro_system_fgs213_switch_energy:
+  name:
+  platform: zwave
+  unique_id: 2-72057594076495874
+sensor.fibaro_system_fgs213_switch_power:
+  name:
+  platform: zwave
+  unique_id: 2-72057594076496002
+sensor.fibaro_system_fgs213_switch_exporting:
+  name:
+  platform: zwave
+  unique_id: 2-72057594076496384
+sensor.fibaro_system_fgs213_switch_alarm_type:
+  name:
+  platform: zwave
+  unique_id: 2-72057594077528065
+sensor.fibaro_system_fgs213_switch_alarm_level:
+  name:
+  platform: zwave
+  unique_id: 2-72057594077528081
+sensor.fibaro_system_fgs213_switch_sourcenodeid:
+  name:
+  platform: zwave
+  unique_id: 2-72057594077528097
+sensor.fibaro_system_fgs213_switch_heat:
+  name:
+  platform: zwave
+  unique_id: 2-72057594077528177
+sensor.fibaro_system_fgs213_switch_power_management:
+  name:
+  platform: zwave
+  unique_id: 2-72057594077528241
+light.living_room:
+  name: Living room
+  platform: zwave
+  unique_id: 3-72057594093076481
+light.fibaro_system_fgd212_dimmer_2_level_2:
+  name:
+  platform: zwave
+  unique_id: 3-144115188131004417
+sensor.fibaro_system_fgd212_dimmer_2_power:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093256770
+sensor.fibaro_system_fgd212_dimmer_2_energy:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093273090
+sensor.fibaro_system_fgd212_dimmer_2_power_2:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093273218
+sensor.fibaro_system_fgd212_dimmer_2_exporting:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093273600
+sensor.fibaro_system_fgd212_dimmer_2_alarm_type:
+  name:
+  platform: zwave
+  unique_id: 3-72057594094305281
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level:
+  name:
+  platform: zwave
+  unique_id: 3-72057594094305297
+sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid:
+  name:
+  platform: zwave
+  unique_id: 3-72057594094305313
+sensor.fibaro_system_fgd212_dimmer_2_heat:
+  name:
+  platform: zwave
+  unique_id: 3-72057594094305393
+sensor.fibaro_system_fgd212_dimmer_2_power_management:
+  name:
+  platform: zwave
+  unique_id: 3-72057594094305457
+sensor.fibaro_system_fgd212_dimmer_2_system:
+  name:
+  platform: zwave
+  unique_id: 3-72057594094305473
+sensor.living_room_thermostat_temperature:
+  name: Living room Thermostat
+  platform: zwave
+  unique_id: 27-72057594495909906
+climate.bedroom_thermostat:
+  name: Bedroom Thermostat
+  platform: zwave
+  unique_id: 7-72057594160660498
+climate.eurotronic_eur_spiritz_wall_radiator_thermostat_furnace:
+  name:
+  platform: zwave
+  unique_id: 7-72057594160660594
+climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat_eco:
+  name:
+  platform: zwave
+  unique_id: 7-72057594160660658
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_alarm_type:
+  name:
+  platform: zwave
+  unique_id: 7-72057594161414145
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_alarm_level:
+  name:
+  platform: zwave
+  unique_id: 7-72057594161414161
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_sourcenodeid:
+  name:
+  platform: zwave
+  unique_id: 7-72057594161414177
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_power_management:
+  name:
+  platform: zwave
+  unique_id: 7-72057594161414321
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_system:
+  name:
+  platform: zwave
+  unique_id: 7-72057594161414337
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_temperature_2:
+  name:
+  platform: zwave
+  unique_id: 9-72057594193920018
+climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat_2:
+  name:
+  platform: zwave
+  unique_id: 9-72057594194214930
+climate.eurotronic_eur_spiritz_wall_radiator_thermostat_furnace_2:
+  name:
+  platform: zwave
+  unique_id: 9-72057594194215026
+climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat_eco_2:
+  name:
+  platform: zwave
+  unique_id: 9-72057594194215090
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_alarm_type_2:
+  name:
+  platform: zwave
+  unique_id: 9-72057594194968577
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_alarm_level_2:
+  name:
+  platform: zwave
+  unique_id: 9-72057594194968593
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_sourcenodeid_2:
+  name:
+  platform: zwave
+  unique_id: 9-72057594194968609
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_power_management_2:
+  name:
+  platform: zwave
+  unique_id: 9-72057594194968753
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_system_2:
+  name:
+  platform: zwave
+  unique_id: 9-72057594194968769
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_temperature_3:
+  name:
+  platform: zwave
+  unique_id: 12-72057594244251666
+climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat_3:
+  name:
+  platform: zwave
+  unique_id: 12-72057594244546578
+climate.eurotronic_eur_spiritz_wall_radiator_thermostat_cooling_1:
+  name:
+  platform: zwave
+  unique_id: 12-72057594244546594
+climate.eurotronic_eur_spiritz_wall_radiator_thermostat_dry_air:
+  name:
+  platform: zwave
+  unique_id: 12-72057594244546690
+climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat_eco_3:
+  name:
+  platform: zwave
+  unique_id: 12-72057594244546738
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_alarm_type_3:
+  name:
+  platform: zwave
+  unique_id: 12-72057594245300225
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_alarm_level_3:
+  name:
+  platform: zwave
+  unique_id: 12-72057594245300241
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_sourcenodeid_3:
+  name:
+  platform: zwave
+  unique_id: 12-72057594245300257
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_power_management_3:
+  name:
+  platform: zwave
+  unique_id: 12-72057594245300401
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_system_3:
+  name:
+  platform: zwave
+  unique_id: 12-72057594245300417
+switch.kids_room_lamp:
+  name: Kids room lamp
+  platform: zwave
+  unique_id: 13-72057594260832256
+light.bed_right:
+  name: Bed right side
+  platform: zwave
+  unique_id: 17-72057594327957505
+light.fibaro_system_fgd212_dimmer_2_level_4:
+  name:
+  platform: zwave
+  unique_id: 17-144115188365885441
+sensor.fibaro_system_fgd212_dimmer_2_power_3:
+  name:
+  platform: zwave
+  unique_id: 17-72057594328137794
+sensor.fibaro_system_fgd212_dimmer_2_energy_2:
+  name:
+  platform: zwave
+  unique_id: 17-72057594328154114
+sensor.fibaro_system_fgd212_dimmer_2_power_4:
+  name:
+  platform: zwave
+  unique_id: 17-72057594328154242
+sensor.fibaro_system_fgd212_dimmer_2_exporting_2:
+  name:
+  platform: zwave
+  unique_id: 17-72057594328154624
+sensor.fibaro_system_fgd212_dimmer_2_alarm_type_2:
+  name:
+  platform: zwave
+  unique_id: 17-72057594329186305
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level_2:
+  name:
+  platform: zwave
+  unique_id: 17-72057594329186321
+sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid_2:
+  name:
+  platform: zwave
+  unique_id: 17-72057594329186337
+sensor.fibaro_system_fgd212_dimmer_2_heat_2:
+  name:
+  platform: zwave
+  unique_id: 17-72057594329186417
+sensor.fibaro_system_fgd212_dimmer_2_power_management_2:
+  name:
+  platform: zwave
+  unique_id: 17-72057594329186481
+sensor.fibaro_system_fgd212_dimmer_2_system_2:
+  name:
+  platform: zwave
+  unique_id: 17-72057594329186497
+switch.office_lamp:
+  name: Office lamp
+  platform: zwave
+  unique_id: 18-72057594344718336
+light.bathroom:
+  name: Bathroom
+  platform: zwave
+  unique_id: 19-72057594361511937
+sensor.fibaro_system_fgd212_dimmer_2_power_5:
+  name:
+  platform: zwave
+  unique_id: 19-72057594361692226
+sensor.fibaro_system_fgd212_dimmer_2_energy_3:
+  name:
+  platform: zwave
+  unique_id: 19-72057594361708546
+sensor.fibaro_system_fgd212_dimmer_2_power_6:
+  name:
+  platform: zwave
+  unique_id: 19-72057594361708674
+sensor.fibaro_system_fgd212_dimmer_2_exporting_3:
+  name:
+  platform: zwave
+  unique_id: 19-72057594361709056
+sensor.fibaro_system_fgd212_dimmer_2_alarm_type_3:
+  name:
+  platform: zwave
+  unique_id: 19-72057594362740737
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level_3:
+  name:
+  platform: zwave
+  unique_id: 19-72057594362740753
+sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid_3:
+  name:
+  platform: zwave
+  unique_id: 19-72057594362740769
+sensor.fibaro_system_fgd212_dimmer_2_heat_3:
+  name:
+  platform: zwave
+  unique_id: 19-72057594362740849
+sensor.fibaro_system_fgd212_dimmer_2_power_management_3:
+  name:
+  platform: zwave
+  unique_id: 19-72057594362740913
+sensor.fibaro_system_fgd212_dimmer_2_system_3:
+  name:
+  platform: zwave
+  unique_id: 19-72057594362740929
+light.bed_left:
+  name: Bed left side
+  platform: zwave
+  unique_id: 20-72057594378289153
+light.fibaro_system_fgd212_dimmer_2_level_7:
+  name:
+  platform: zwave
+  unique_id: 20-144115188416217089
+sensor.fibaro_system_fgd212_dimmer_2_power_7:
+  name:
+  platform: zwave
+  unique_id: 20-72057594378469442
+sensor.fibaro_system_fgd212_dimmer_2_energy_4:
+  name:
+  platform: zwave
+  unique_id: 20-72057594378485762
+sensor.fibaro_system_fgd212_dimmer_2_power_8:
+  name:
+  platform: zwave
+  unique_id: 20-72057594378485890
+sensor.fibaro_system_fgd212_dimmer_2_exporting_4:
+  name:
+  platform: zwave
+  unique_id: 20-72057594378486272
+sensor.fibaro_system_fgd212_dimmer_2_alarm_type_4:
+  name:
+  platform: zwave
+  unique_id: 20-72057594379517953
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level_4:
+  name:
+  platform: zwave
+  unique_id: 20-72057594379517969
+sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid_4:
+  name:
+  platform: zwave
+  unique_id: 20-72057594379517985
+sensor.fibaro_system_fgd212_dimmer_2_heat_4:
+  name:
+  platform: zwave
+  unique_id: 20-72057594379518065
+sensor.fibaro_system_fgd212_dimmer_2_power_management_4:
+  name:
+  platform: zwave
+  unique_id: 20-72057594379518129
+sensor.fibaro_system_fgd212_dimmer_2_system_4:
+  name:
+  platform: zwave
+  unique_id: 20-72057594379518145
+sensor.kitchen_thermostat_temperature:
+  name: Kitchen Thermostat Temperature
+  platform: zwave
+  unique_id: 26-72057594479132690
+climate.kitchen_thermostat:
+  name: Kitchen Thermostat
+  platform: zwave
+  unique_id: 26-72057594479427602
+climate.eurotronic_eur_spiritz_wall_radiator_thermostat_furnace_3:
+  name:
+  platform: zwave
+  unique_id: 26-72057594479427698
+climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat_eco_4:
+  name:
+  platform: zwave
+  unique_id: 26-72057594479427762
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_alarm_type_4:
+  name:
+  platform: zwave
+  unique_id: 26-72057594480181249
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_alarm_level_4:
+  name:
+  platform: zwave
+  unique_id: 26-72057594480181265
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_sourcenodeid_4:
+  name:
+  platform: zwave
+  unique_id: 26-72057594480181281
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_power_management_4:
+  name:
+  platform: zwave
+  unique_id: 26-72057594480181425
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_system_4:
+  name:
+  platform: zwave
+  unique_id: 26-72057594480181441
+climate.living_room_thermostat:
+  name: Living room Thermostat
+  platform: zwave
+  unique_id: 27-72057594496204818
+climate.eurotronic_eur_spiritz_wall_radiator_thermostat_furnace_4:
+  name:
+  platform: zwave
+  unique_id: 27-72057594496204914
+climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat_eco_5:
+  name:
+  platform: zwave
+  unique_id: 27-72057594496204978
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_alarm_type_5:
+  name:
+  platform: zwave
+  unique_id: 27-72057594496958465
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_alarm_level_5:
+  name:
+  platform: zwave
+  unique_id: 27-72057594496958481
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_sourcenodeid_5:
+  name:
+  platform: zwave
+  unique_id: 27-72057594496958497
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_power_management_5:
+  name:
+  platform: zwave
+  unique_id: 27-72057594496958641
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_system_5:
+  name:
+  platform: zwave
+  unique_id: 27-72057594496958657
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_temperature_6:
+  name:
+  platform: zwave
+  unique_id: 28-72057594512687122
+climate.living_room_thermostat_2:
+  name: Living room Thermostat 2
+  platform: zwave
+  unique_id: 28-72057594512982034
+climate.eurotronic_eur_spiritz_wall_radiator_thermostat_furnace_5:
+  name:
+  platform: zwave
+  unique_id: 28-72057594512982130
+climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat_eco_6:
+  name:
+  platform: zwave
+  unique_id: 28-72057594512982194
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_alarm_type_6:
+  name:
+  platform: zwave
+  unique_id: 28-72057594513735681
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_alarm_level_6:
+  name:
+  platform: zwave
+  unique_id: 28-72057594513735697
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_sourcenodeid_6:
+  name:
+  platform: zwave
+  unique_id: 28-72057594513735713
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_power_management_6:
+  name:
+  platform: zwave
+  unique_id: 28-72057594513735857
+sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_system_6:
+  name:
+  platform: zwave
+  unique_id: 28-72057594513735873
+sensor.bedroom_thermostat_temperature:
+  name: Bedroom Thermostat Temperature
+  platform: zwave
+  unique_id: 7-72057594160365586
+zwave.zwaveme_zme_uzb1_usb_stick:
+  name:
+  platform: zwave
+  unique_id: node-1
+zwave.fibaro_system_fgs213_switch:
+  name:
+  platform: zwave
+  unique_id: node-2
+zwave.fibaro_system_fgd212_dimmer_2:
+  name:
+  platform: zwave
+  unique_id: node-3
+zwave.eurotronic_eur_spiritz_wall_radiator_thermostat:
+  name:
+  platform: zwave
+  unique_id: node-7
+zwave.eurotronic_eur_spiritz_wall_radiator_thermostat_2:
+  name:
+  platform: zwave
+  unique_id: node-9
+zwave.eurotronic_eur_spiritz_wall_radiator_thermostat_3:
+  name:
+  platform: zwave
+  unique_id: node-12
+zwave.fibaro_system_fgd212_dimmer_2_2:
+  name:
+  platform: zwave
+  unique_id: node-17
+zwave.swiid_swiidinter:
+  name:
+  platform: zwave
+  unique_id: node-18
+zwave.fibaro_system_fgd212_dimmer_2_3:
+  name:
+  platform: zwave
+  unique_id: node-19
+zwave.fibaro_system_fgd212_dimmer_2_4:
+  name:
+  platform: zwave
+  unique_id: node-20
+zwave.eurotronic_eur_spiritz_wall_radiator_thermostat_4:
+  name:
+  platform: zwave
+  unique_id: node-26
+zwave.eurotronic_eur_spiritz_wall_radiator_thermostat_5:
+  name:
+  platform: zwave
+  unique_id: node-27
+zwave.eurotronic_eur_spiritz_wall_radiator_thermostat_6:
+  name:
+  platform: zwave
+  unique_id: node-28
+zwave._:
+  name:
+  platform: zwave
+  unique_id: node-8
+zwave.__2:
+  name:
+  platform: zwave
+  unique_id: node-10
+zwave.__3:
+  name:
+  platform: zwave
+  unique_id: node-13
